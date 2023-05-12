@@ -111,7 +111,7 @@ const validaOk = (input, msje) => {
 
 //consultar api
 const consultarApi = (operacion) => {
-  fetch(`http://api.mathjs.org/v4/?expr=${operacion}`)
+  fetch(`https://api.mathjs.org/v4/?expr=${operacion}`)
     .then((respuesta) => respuesta.json())
     .then((data) => {
       const resultado = document.querySelector("#resultado");
